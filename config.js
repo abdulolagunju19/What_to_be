@@ -1,28 +1,28 @@
 export const seo = {
-  title: "Portfolio Boilerplate",
+  title: "What it's Like to Be",
   description:
-    "A Next.js boilerplate for building your portfolio as quick as possible",
-  canonical: "https://portfolio-boilerplate-nextjs.vercel.app/",
+    "Learn about your University of Alberta Community",
+  canonical: "https://what-template.vercel.app/",
 }
 
 export const data = [
   {
-    title: "Your title",
+    title: "Learn about your Professors.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora dolorem doloribus repudiandae, possimus quod quas. Ipsum culpa repellat dolorem vero odit iste delectus id, sed iure facere, animi suscipit.",
+      "Tired of scraping the University of Alberta faculty pages in order to learn about those who teach you? We make it easy, and more informative.",
     image: "/code-review-bro.png",
   },
   {
-    title: "Your title",
+    title: "Learn about your clubs on campus.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora dolorem doloribus repudiandae, possimus quod quas. Ipsum culpa repellat dolorem vero odit iste delectus id, sed iure facere, animi suscipit.",
-    image: "/code-review-bro.png",
+      "Bearsden gives you a tiny bit of information about the clubs you want to join. We give you their purpose, and follow up with them so you can learn about the interesting things people are trying to put together.",
+    image: "/club.jpg",
   },
   {
-    title: "Your title",
+    title: "Get a glimpse into what we do here.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora dolorem doloribus repudiandae, possimus quod quas. Ipsum culpa repellat dolorem vero odit iste delectus id, sed iure facere, animi suscipit.",
-    image: "/code-review-bro.png",
+      "The University of Alberta is filled with amazing people doing amazing things every day. It's time we shared these things. Support us by contacting us if you want to be featured on our website.",
+    image: "/contact-us.png",
   },
 ]
 

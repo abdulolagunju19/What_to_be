@@ -12,7 +12,7 @@ export const tagColor = {
   ssr: { bgColor: "#77aa7bE2", hover: "#609363E2" },
   css: { bgColor: "#FE4A49E2", hover: "#ed3434E2" },
   testing: { bgColor: "#05afa0E2", hover: "#0ce5d2E2" },
-  webpack: { bgColor: "#a02438", hover: "#a02438E2" },
-  optimization: { bgColor: "#8f4dbf", hover: "#8f4dbfE2" },
-  markdown: { bgColor: "#168aad", hover: "#1a759f" },
+  origin: { bgColor: "#a02438", hover: "#a02438E2" },
+  startup: { bgColor: "#8f4dbf", hover: "#8f4dbfE2" },
+  innovate: { bgColor: "#168aad", hover: "#1a759f" },
 }

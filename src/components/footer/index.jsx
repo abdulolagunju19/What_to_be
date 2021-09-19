@@ -43,10 +43,6 @@ const Footer = () => (
         <Box py="2">
           <Text>
             Built with{" "}
-            <span role="img" aria-label="red heart">
-              ❤️
-            </span>
-            ,{" "}
             <ChakraLink
               href="https://nextjs.org/"
               fontWeight="600"
@@ -74,17 +70,6 @@ const Footer = () => (
               Vercel.
             </ChakraLink>
           </Text>
-        </Box>
-        <Box py="2">
-          <ChakraLink
-            href="https://github.com/imadatyatalah/nextjs-chakra-ui-portfolio-template"
-            aria-label="source code"
-            isExternal
-          >
-            <Button aria-label="source code">
-              <Icon as={FaCode} w="6" h="6" />
-            </Button>
-          </ChakraLink>
         </Box>
       </Box>
     </Box>

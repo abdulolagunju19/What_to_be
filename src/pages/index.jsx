@@ -41,7 +41,7 @@ const Home = () => {
         py="4"
       >
         <NextImage
-          src="/bighead.svg"
+          src="/1200px-University_of_Alberta_seal.svg.png"
           width="350"
           height="350"
           alt="avatar bigheads"

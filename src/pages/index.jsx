@@ -51,28 +51,27 @@ const Home = () => {
         />
         <Box>
           <Heading as="h1" fontSize="2xl" fontWeight="500" py="2">
-            Hi, I'm John Doe{" "}
+            Come and Learn something new!{" "}
             <span role="img" aria-label="hand">
               👋🏻
             </span>
           </Heading>
           <Heading fontSize={["3xl", "4xl"]} fontWeight="700">
             <Text as="span" color={color}>
-              Building
+              We wanted to know
             </Text>{" "}
-            digital products, Brands, And experience.
+            the important things people are doing on campus.
           </Heading>
           <Text py="4">
-            A{" "}
+            Learn about{" "}
             <Text as="span" fontWeight="600">
-              web designer
+              your professors
             </Text>{" "}
             and{" "}
             <Text as="span" fontWeight="600">
-              front-end web developer
+              clubs
             </Text>{" "}
-            based in the US, I specialize in UI/UX design, Responsive web
-            design, And accessibility.
+            from the comfort of your computer.
           </Text>
           <Button
             colorScheme="telegram"

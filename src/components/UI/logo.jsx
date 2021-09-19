@@ -6,15 +6,7 @@ const Logo = () => (
   <>
     <NextLink href="/" passHref>
       <chakra.a fontSize="2rem" fontWeight="700">
-        <NextImage
-          src="/logo.png"
-          width="150"
-          height="50"
-          alt="logo"
-          placeholder="blur"
-          blurDataURL="L5I~of#i004mgjw]-4XA00?wL#xu"
-          priority
-        />
+        What it's Like to Be
       </chakra.a>
     </NextLink>
   </>

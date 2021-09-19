@@ -105,7 +105,6 @@ const Home = () => {
               mx={{ base: "auto", lg: "0" }}
               pl={{ lg: isOdd(index) == 1 && "10" }}
               pr={{ lg: isOdd(index) == 0 && "10" }}
-              borderRadius="lg"
             >
               <NextImage
                 src={item.image}

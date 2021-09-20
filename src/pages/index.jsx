@@ -2,6 +2,7 @@ import { Box, Button, Heading, Text, useColorModeValue, Flex } from "@chakra-ui/
 import { NextSeo } from "next-seo"
 import NextImage from "next/image"
 import { useMediaQuery } from 'react-responsive'
+import { useRouter } from 'next/router'
 import "animate.css"
 import Typewriter from 'typewriter-effect';
 
@@ -14,6 +15,8 @@ const Home = () => {
 
   const title = `Home | ${seo.title}`
   const description = seo.description
+  
+  const router = useRouter()
   
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
@@ -123,6 +126,7 @@ const Home = () => {
             variant="ghost"
             size="lg"
             fontSize="20px"
+            onClick={() => router.push('mailto:olagunju@ualberta.ca')}
           >
             Get in touch
           </Button>

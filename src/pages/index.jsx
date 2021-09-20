@@ -1,7 +1,7 @@
 import { Box, Button, Heading, Text, useColorModeValue, Flex } from "@chakra-ui/react"
 import { NextSeo } from "next-seo"
 import NextImage from "next/image"
-
+import { useMediaQuery } from 'react-responsive'
 import "animate.css"
 import Typewriter from 'typewriter-effect';
 
@@ -14,6 +14,15 @@ const Home = () => {
 
   const title = `Home | ${seo.title}`
   const description = seo.description
+  
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+  
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   return (
     <>
@@ -54,39 +63,47 @@ const Home = () => {
         />
         <Box>
           <Heading fontSize={["3xl", "4xl"]} fontWeight="700" className="animate__animated animate__flipInY animate__delay-1s">
-            <Flex direction='row'>
-              <Text as="span" color={color}>We want to&nbsp;</Text>
-              <Text
-                as='span'
-                fontSize={["3xl", "4xl"]}
-                variant='primary'
-                fontWeight='semibold'
-                _hover={{ fontWeight: 'bold' }}
-              >
-                <Typewriter
-                  options={{
-                    delay: 50,
-                    skipAddStyles: true,
-                    loop: true,
-                    deleteSpeed: 20,
-                  }}
-                  onInit={(typewriter) => {
-                    typewriter
-                      .pauseFor(2000)
-                      .typeString('learn more about U of A projects.')
-                      .pauseFor(2000)
-                      .deleteChars(38)
-                      .typeString('know more about U of A students.')
-                      .pauseFor(2000)
-                      .deleteChars(38)
-                      .typeString('know more about U of A academia.')
-                      .pauseFor(2000)
-                      .deleteChars(38)
-                      .start();
-                  }}
-                />
-              </Text>
-            </Flex>
+          {isTabletOrMobile && 
+            <Text as="span" color={color}>
+              We want to
+            </Text>{" "}
+            know more about what is happening on campus.
+          }
+          {isDesktopOrLaptop && 
+          <Flex direction='row'>
+            <Text as="span" color={color}>We want to&nbsp;</Text>
+            <Text
+              as='span'
+              fontSize={["3xl", "4xl"]}
+              variant='primary'
+              fontWeight='semibold'
+              _hover={{ fontWeight: 'bold' }}
+            >
+              <Typewriter
+                options={{
+                  delay: 50,
+                  skipAddStyles: true,
+                  loop: true,
+                  deleteSpeed: 20,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .pauseFor(2000)
+                    .typeString('learn more about U of A projects.')
+                    .pauseFor(2000)
+                    .deleteChars(38)
+                    .typeString('know more about U of A students.')
+                    .pauseFor(2000)
+                    .deleteChars(38)
+                    .typeString('know more about U of A academia.')
+                    .pauseFor(2000)
+                    .deleteChars(38)
+                    .start();
+                }}
+              />
+            </Text>
+          </Flex>
+          }
           </Heading>
           <Text py="4">
             Learn about{" "}

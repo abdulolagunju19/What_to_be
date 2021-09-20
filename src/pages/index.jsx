@@ -1,6 +1,9 @@
-import { Box, Button, Heading, Text, useColorModeValue } from "@chakra-ui/react"
+import { Box, Button, Heading, Text, useColorModeValue, Flex } from "@chakra-ui/react"
 import { NextSeo } from "next-seo"
 import NextImage from "next/image"
+
+import "animate.css"
+import Typewriter from 'typewriter-effect';
 
 import { seo, data } from "config"
 
@@ -50,17 +53,40 @@ const Home = () => {
           priority
         />
         <Box>
-          <Heading as="h1" fontSize="2xl" fontWeight="500" py="2">
-            Come and Learn something new!{" "}
-            <span role="img" aria-label="hand">
-              👋🏻
-            </span>
-          </Heading>
-          <Heading fontSize={["3xl", "4xl"]} fontWeight="700">
-            <Text as="span" color={color}>
-              We wanted to know
-            </Text>{" "}
-            the important things people are doing on campus.
+          <Heading fontSize={["3xl", "4xl"]} fontWeight="700" className="animate__animated animate__flipInY animate__delay-1s">
+            <Flex direction='row'>
+              <Text as="span" color={color}>We want to&nbsp;</Text>
+              <Text
+                as='span'
+                fontSize={["3xl", "4xl"]}
+                variant='primary'
+                fontWeight='semibold'
+                _hover={{ fontWeight: 'bold' }}
+              >
+                <Typewriter
+                  options={{
+                    delay: 50,
+                    skipAddStyles: true,
+                    loop: true,
+                    deleteSpeed: 20,
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(2000)
+                      .typeString('learn more about U of A projects.')
+                      .pauseFor(2000)
+                      .deleteChars(38)
+                      .typeString('know more about U of A students.')
+                      .pauseFor(2000)
+                      .deleteChars(38)
+                      .typeString('know more about U of A academia.')
+                      .pauseFor(2000)
+                      .deleteChars(38)
+                      .start();
+                  }}
+                />
+              </Text>
+            </Flex>
           </Heading>
           <Text py="4">
             Learn about{" "}
@@ -122,6 +148,12 @@ const Home = () => {
             </Box>
           </Box>
         ))}
+        <Heading as="h1" fontSize="2xl" fontWeight="500" py="2">
+          Come and Learn something new!{" "}
+          <span role="img" aria-label="hand">
+            👋🏻
+          </span>
+        </Heading>
       </Box>
     </>
   )

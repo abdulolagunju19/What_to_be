@@ -21,7 +21,7 @@ export const data = [
   {
     title: "Get a glimpse into what we do here.",
     description:
-      "The University of Alberta is filled with amazing people doing amazing things every day. It's time we shared these things. Support us by contacting us if you want to be featured on our website, or have any ideas about taking this project to the next level.",
+      "The University of Alberta is filled with amazing people doing amazing things every day. It's time we shared these things. Support us by contacting us (olagunju@ualberta.ca) if you want to be featured on our website, or have any ideas about taking this project to the next level.",
     image: "/Get in touch-amico.png",
   },
 ]

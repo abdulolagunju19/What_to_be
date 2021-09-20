@@ -62,49 +62,51 @@ const Home = () => {
           priority
         />
         <Box>
-          <Heading fontSize={["3xl", "4xl"]} fontWeight="700" className="animate__animated animate__flipInY animate__delay-1s">
           {isTabletOrMobile && 
-            <Text as="span" color={color}>
-              We want to
-            </Text>{" "}
-            know more about what is happening on campus.
+            <Heading fontSize={["3xl", "4xl"]} fontWeight="700" className="animate__animated animate__flipInY animate__delay-1s">
+              <Text as="span" color={color}>
+                We want to
+              </Text>{" "}
+              know more about what is happening on campus.
+            </Heading>
           }
           {isDesktopOrLaptop && 
-          <Flex direction='row'>
-            <Text as="span" color={color}>We want to&nbsp;</Text>
-            <Text
-              as='span'
-              fontSize={["3xl", "4xl"]}
-              variant='primary'
-              fontWeight='semibold'
-              _hover={{ fontWeight: 'bold' }}
-            >
-              <Typewriter
-                options={{
-                  delay: 50,
-                  skipAddStyles: true,
-                  loop: true,
-                  deleteSpeed: 20,
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .pauseFor(2000)
-                    .typeString('learn more about U of A projects.')
-                    .pauseFor(2000)
-                    .deleteChars(38)
-                    .typeString('know more about U of A students.')
-                    .pauseFor(2000)
-                    .deleteChars(38)
-                    .typeString('know more about U of A academia.')
-                    .pauseFor(2000)
-                    .deleteChars(38)
-                    .start();
-                }}
-              />
-            </Text>
-          </Flex>
+            <Heading fontSize={["3xl", "4xl"]} fontWeight="700" className="animate__animated animate__flipInY animate__delay-1s">
+            <Flex direction='row'>
+              <Text as="span" color={color}>We want to&nbsp;</Text>
+              <Text
+                as='span'
+                fontSize={["3xl", "4xl"]}
+                variant='primary'
+                fontWeight='semibold'
+                _hover={{ fontWeight: 'bold' }}
+              >
+                <Typewriter
+                  options={{
+                    delay: 50,
+                    skipAddStyles: true,
+                    loop: true,
+                    deleteSpeed: 20,
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(2000)
+                      .typeString('learn more about U of A projects.')
+                      .pauseFor(2000)
+                      .deleteChars(38)
+                      .typeString('know more about U of A students.')
+                      .pauseFor(2000)
+                      .deleteChars(38)
+                      .typeString('know more about U of A academia.')
+                      .pauseFor(2000)
+                      .deleteChars(38)
+                      .start();
+                  }}
+                />
+              </Text>
+            </Flex>
+            </Heading>
           }
-          </Heading>
           <Text py="4">
             Learn about{" "}
             <Text as="span" fontWeight="600">

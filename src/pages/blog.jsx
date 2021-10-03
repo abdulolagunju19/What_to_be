@@ -51,7 +51,7 @@ const Blog = ({ posts }) => {
     }
   }, [router])
 
-  const title = `Blog | ${seo.title}`
+  const title = `Interviews | ${seo.title}`
   const description = seo.description
   const url = `${seo.canonical}blog`
 

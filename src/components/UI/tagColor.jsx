@@ -15,4 +15,9 @@ export const tagColor = {
   origin: { bgColor: "#a02438", hover: "#a02438E2" },
   startup: { bgColor: "#8f4dbf", hover: "#8f4dbfE2" },
   innovate: { bgColor: "#168aad", hover: "#1a759f" },
+  interview: { bgColor: "#168aad", hover: "#1a759f" },
+  cs: { bgColor: "#E8265EE2", hover: "#ce0840E2" },
+  business: { bgColor: "#1A91DAE2", hover: "#0b7bbcE2" },
+  biology: { bgColor: "#865DCAE2", hover: "#784cc4E2" },
+  physics: { bgColor: "#ff7bacE2", hover: "#f7659aE2" }
 }

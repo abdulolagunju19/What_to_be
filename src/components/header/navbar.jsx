@@ -62,7 +62,7 @@ const Navbar = () => {
               <a onClick={closeMenu}>Interviews</a>
             </NextLink>
           </chakra.li>
-        </chakra.ul>
+
         <chakra.li
             listStyleType="none"
             px={{ lg: "8" }}
@@ -72,7 +72,7 @@ const Navbar = () => {
               <a onClick={closeMenu}>Upcoming</a>
             </NextLink>
           </chakra.li>
-        </chakra.ul>
+
         <chakra.li
             listStyleType="none"
             px={{ lg: "8" }}

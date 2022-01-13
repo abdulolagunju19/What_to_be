@@ -69,19 +69,10 @@ const Navbar = () => {
             py={{ base: "3", lg: "0" }}
           >
             <NextLink href="/blog">
-              <a onClick={closeMenu}>Upcoming</a>
+              <a onClick={closeMenu}>Upcoming Interviews</a>
             </NextLink>
           </chakra.li>
 
-        <chakra.li
-            listStyleType="none"
-            px={{ lg: "8" }}
-            py={{ base: "3", lg: "0" }}
-          >
-            <NextLink href="/blog">
-              <a onClick={closeMenu}>Mentors</a>
-            </NextLink>
-          </chakra.li>
         </chakra.ul>
         <ColorModeToggle />
       </Box>

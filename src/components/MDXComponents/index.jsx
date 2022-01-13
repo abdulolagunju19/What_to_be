@@ -7,6 +7,11 @@ import {
   ListItem,
   InlineCode,
 } from "./common"
+
+import { 
+    Text
+} from '@chakra-ui/react';
+
 import Headings from "./headings"
 import CodeBlock from "./codeBlock"
 
@@ -17,7 +22,7 @@ const MDXComponents = {
   h4: (props) => <Headings as="h4" fontSize="18px" {...props} />,
   h5: (props) => <Headings as="h5" fontSize="16px" {...props} />,
   h6: (props) => <Headings as="h6" fontSize="14px" {...props} />,
-
+  p: (props) => <Text as="p" fontSize="17px" mt={0} {...props} />,
   code: CodeBlock,
   a: CustomLink,
   ul: UnorderedList,

@@ -130,6 +130,7 @@ const Home = () => {
           >
             Get in touch
           </Button>
+          <script src="//code.tidio.co/naazozmwi7vjnre78i1ecvtkkjvtlu0p.js" async></script>
         </Box>
       </Box>
 

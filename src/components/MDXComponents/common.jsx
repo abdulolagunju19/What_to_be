@@ -28,7 +28,7 @@ export const UnorderedList = (props) => (
 export const OrderedList = (props) => (
   <>
     <chakra.ol
-      style={{ paddingLeft: "1rem", paddingTop: "0.5rem" }}
+      style={{ paddingLeft: "1rem", paddingTop: "0.5rem", fontSize: "19px" }}
       {...props}
     />
   </>

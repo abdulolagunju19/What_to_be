@@ -79,7 +79,7 @@ const Upcoming = () => {
             variant="ghost"
             size="lg"
             fontSize="20px"
-            onClick={() => router.push('mailto:blandsentence@protonmail.com')}
+            onClick={() => router.push('mailto:olagunju@ualberta.ca')}
           >
             Get in touch!
           </Button>

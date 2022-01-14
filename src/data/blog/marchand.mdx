@@ -1,7 +1,7 @@
 ---
 title: "Who is Professor Richard Marchand?"
-publishedAt: "2021-11-28"
-modifiedAt: "2021-11-28"
+publishedAt: "2021-10-15"
+modifiedAt: "2022-01-08"
 author: "Abdul-Samad Olagunju"
 summary: "Professor Richard Marchand Interview"
 tags: ["origin", "interview", "physics"]
@@ -9,4 +9,250 @@ tags: ["origin", "interview", "physics"]
 
 ## Professor Richard Marchand
 
-More details coming soon.
+<img
+  src="/Binary code-bro.png"
+  width="800"
+  height="800"
+  alt="code"
+  title="code"
+/>
+
+### Spacecraft and Plasma
+
+Professor Richard Marchand is a Professor in the Faculty of Science at the University of Alberta. He specializes in computational physics and the interaction between spacecraft and the atmosphere.
+
+He currently teaches ASTRO 429 at the University of Alberta.
+
+Check out his personal website over here: https://sites.ualberta.ca/~rmarchan/
+
+You can find out more about his research here: https://apps.ualberta.ca/directory/person/rmarchan 
+
+Check out his research publications here: https://www.researchgate.net/profile/Richard-Marchand-2 
+
+Here are some important tidbits from the interview:
+1.	Check out the dialogue at 1:01. Professor Marchand discusses plasma and the environment.
+2.	Check out the dialogue at 5:32. Professor Marchand discusses his research.
+3.	Check out the dialogue at 18:26. Professor Marchand discusses the developing his own software.
+
+#### Richard Marchand  1:01  
+My training was not in Space Physics or the computer modelling of the interaction between spacecraft and the environment. 
+
+I studied plasma physics in the context of controlled thermonuclear fusion. I worked for a few years on fusion projects, but at some point, the project where I was working closed due to a lack of funding. 
+
+Fusion was considered to be unimportant in Canada and therefore it was terminated. So this is how I ended up here in space physics. And I don’t regret it because I’ve been working on fairly interesting problems. 
+
+Basically, you were asking me what it was about. You know that there are satellites in space and a lot of satellites serve very practical purposes. They monitor the winds in the oceans, forest fires, pollution, and all sorts of things. And communication, of course, is very important. 
+
+In addition, there are plenty of scientific satellites in space around the earth and outside in the solar system. But I’m mostly interested in the ones that are near Earth and in the ionosphere, lower ionosphere, or maybe upper ionosphere as well. 
+
+These satellites have instruments on them in order to measure the state of the plasma environment and of the ionospheric environment. 
+
+The way the magnetosphere (so the Near Earth environment) and the ionosphere (which is basically above the upper atmosphere above 80-100 kilometres), the way this region of space reacts to abrupt changes in the solar wind and solar radiation results a lot of violent things happening in space. 
+
+We look outside, and we see the clouds and the blue sky. We look at the sun, not with the naked eye of course, we just sort of take a glimpse of the sun. It always looks very quiet and very predictable. And it is based on a large extent in the visible range. 
+
+However, there are violent things happening such as flares and coronal mass ejections. Coronal mass ejections are when these big blobs of plasma are ejected from the sun and hit the Earth’s magnetosphere. These can cause storms, magnetic storms, which can destroy, maybe destroy is a bit of a strong word, but they can severely affect the ground infrastructure. Overtime currents induced by these variations in the magnetic field, in the magnetosphere, can induce currents in pipelines for example, even if they’re underground as they can penetrate the ground and cause corrosion in these pipelines. 
+
+They can trip the transformers in large power grids so that blackouts occur. This is a big problem, certainly in parts of the world where there are very large power grids that extend over hundreds, maybe thousands of kilometres. So that’s a concern. 
+
+But the thing is that, as I found out, and I didn’t find out about this overnight. 
+
+I started out working on some simple problems and I realised that the way the scientific measurements were made, let’s say for very basic things such as the density, the temperature of the plasma, the flow velocity, because there’s wind in here in the lower atmosphere, but there’s also wind in the upper ionosphere and magnetosphere that their plasma still it moves around a lot, is not accurate enough.
+
+#### Richard Marchand  5:32  
+There is solar wind. They are enormous variations in the solar wind, and you can have jumps that are discontinuous, almost discontinuous jumps in the density and the speed. The speed of the solar wind can be 340 kilometres per second, that’s quite fast, and it can reach up to 900, maybe 1000 kilometres per second, that’s really fast. 
+
+And that density can increase also by a factor of, I don’t know, but by several orders of magnitude. Let’s say five, up to a factor of five, let’s say it’s not uncommon. 
+
+These things hit the magnetosphere, and the magnetosphere is a protective invisible envelope that surrounds the earth and prevents this high speed solar wind coming from the Sun from hitting the atmosphere directly. 
+
+When this happens, the magnetosphere sort of rings okay, you can say it’s like a bell. When you hit a bell with something it abruptly rings and then these adverse things can happen. You can have large induced electric fields, even at the surface of the Earth. You can destroy satellites that are in orbit. 
+
+So yeah, unless they take some measures to protect them, then these satellites can be damaged or completely destroyed. 
+
+Anyway, coming back to the measurement of these basic parameters, you can use these basic parameters to learn a lot about the weather.
+
+You see, the goal of a lot of space physicists is to understand space weather. And space weather is the manifestation of variations, for example the variability of solar activity. Solar wind on our magnetosphere and ionosphere can affect what’s happening on the ground. 
+
+So, one thing that I started with was to look at a very basic instrument called the Langmuir Probe. 
+
+It’s an electric probe that you put in a plasma, you bias to certain voltages, you measure the current as a function of bias voltage. And from this in principle, you can get the density, the temperature, the floating potential, I’m not going to go into the full potential of the satellite, but the satellite has a potential in space, it’s not, it’s not at zero potential with respect to the background plasma. 
+
+So, you can get all these things in principle, but the methods that are used to infer these quantities, these parameters, are always based on theory, relatively simple analytic theory.
+
+It’s simple theories that can be used to derive simple analytic expressions that have to do these inferences. And they make a lot of assumptions which are not satisfied, they’re not well satisfied. 
+
+So what we what you get in the end is an estimate, let’s say of the density, which is frequently three times larger than that it should be. Temperatures are usually reasonably good. Satellite potentials, not too many instruments measure the potential of a satellite accurately. 
+
+This is something that that’s highly uncertain in a lot of space missions. What we did in our group is to develop simulation tools, numerical tools, to simulate the interaction between the space environment, a satellite, and the instruments. From this we can construct synthetic data sets that we can use not to develop theory, because theory is just not capable of the accounting for all the processes that are important and the geometry that is important. 
+
+So we do three dimensional kinetic simulations, we construct synthetic data sets, and we use multivariate regression techniques. 
+
+So you have a data set, you have a lot of densities, temperatures, and all sorts of relevant parameters. You also have currents, it’s possible with the simulations to calculate the currents that you would get given certain plasma conditions. And then the regression techniques allow us to go from the currents back to the density, temperature, etc. So that’s what we have been doing. 
+
+It’s still in progress, you know, I have students working on different designs of probes. This is providing methods for inferring these plasma conditions, much more reliably than what has been possible so far. 
+
+But you know, the challenge is to convince people to adopt these techniques. People have been working with pretty much the same algorithms and techniques for about 100 years. It’s not a new problem, it’s an old problem. Everybody is used to doing things a certain way and they’re happy with it. It’s not going to be easy to convince people to at least look at new and possibly better ways of doing things.
+
+#### Richard Marchand  18:26  
+Anyway. What was I saying? Oh yeah, I was telling you about my stay in France actually for a sabbatical. There they had a software to simulate satellite plasma interaction. I decided to use that initially. The developer was right there. 
+
+I couldn’t talk to the developer, and I got so frustrated. At the time, I already had quite a bit of experience in mesh generation and, and finite elements. I just put everything aside, I took two or three months, and I wrote Miko. It was still a bit buggy, but it was doing a fairly good job. And that was more than 10 years ago. It was 14 years ago. And since then, the code has been debugged and considerably improved. 
+
+So now it’s actually quite good and they’re using it in Norway. I have a former student who uses it in Pakistan. Who else uses it? I do and I have a student working at Los Alamos now. And I think he uses it occasionally; they have their own codes. But it’s nice. He told me once that he would like to make comparisons to just check things. To make sure that what he was doing with the other codes was in agreement with what he gets with our code.
+
+## Full Interview:
+
+#### Abdul-Samad Olagunju  0:00  
+I think yeah, I just like to learn lots of different things. And what this thing has been about is just getting more information about the people who are doing research on campus and who are running student initiatives. 
+
+So I saw from your profile in the University of Alberta directory, I saw that you were interested in doing computational physics and measuring, I think it was plasma, from spacecraft. And even though I don’t understand that at all, I was just really interested in it from the description. I would love for you to just talk about your research for a little bit. 
+
+#### Richard Marchand  1:01  
+My training was not in Space Physics or the computer modelling of the interaction between spacecraft and the environment. 
+
+I studied plasma physics in the context of controlled thermonuclear fusion. I worked for a few years on fusion projects, but at some point, the project where I was working closed due to a lack of funding. 
+
+Fusion was considered to be unimportant in Canada and therefore it was terminated. So this is how I ended up here in space physics. And I don’t regret it because I’ve been working on fairly interesting problems. 
+
+Basically, you were asking me what it was about. You know that there are satellites in space and a lot of satellites serve very practical purposes. They monitor the winds in the oceans, forest fires, pollution, and all sorts of things. And communication, of course, is very important. 
+
+In addition, there are plenty of scientific satellites in space around the earth and outside in the solar system. But I’m mostly interested in the ones that are near Earth and in the ionosphere, lower ionosphere, or maybe upper ionosphere as well. 
+
+These satellites have instruments on them in order to measure the state of the plasma environment and of the ionospheric environment. 
+
+The way the magnetosphere (so the Near Earth environment) and the ionosphere (which is basically above the upper atmosphere above 80-100 kilometres), the way this region of space reacts to abrupt changes in the solar wind and solar radiation results a lot of violent things happening in space. 
+
+We look outside, and we see the clouds and the blue sky. We look at the sun, not with the naked eye of course, we just sort of take a glimpse of the sun. It always looks very quiet and very predictable. And it is based on a large extent in the visible range. 
+
+However, there are violent things happening such as flares and coronal mass ejections. Coronal mass ejections are when these big blobs of plasma are ejected from the sun and hit the Earth’s magnetosphere. These can cause storms, magnetic storms, which can destroy, maybe destroy is a bit of a strong word, but they can severely affect the ground infrastructure. Overtime currents induced by these variations in the magnetic field, in the magnetosphere, can induce currents in pipelines for example, even if they’re underground as they can penetrate the ground and cause corrosion in these pipelines. 
+
+They can trip the transformers in large power grids so that blackouts occur. This is a big problem, certainly in parts of the world where there are very large power grids that extend over hundreds, maybe thousands of kilometres. So that’s a concern. 
+
+But the thing is that, as I found out, and I didn’t find out about this overnight. 
+
+I started out working on some simple problems and I realised that the way the scientific measurements were made, let’s say for very basic things such as the density, the temperature of the plasma, the flow velocity, because there’s wind in here in the lower atmosphere, but there’s also wind in the upper ionosphere and magnetosphere that their plasma still it moves around a lot, is not accurate enough.
+
+#### Abdul-Samad Olagunju  5:19  
+I thought there was no wind in space, right? 
+
+#### Richard Marchand  5:32  
+There is solar wind. They are enormous variations in the solar wind, and you can have jumps that are discontinuous, almost discontinuous jumps in the density and the speed. The speed of the solar wind can be 340 kilometres per second, that’s quite fast, and it can reach up to 900, maybe 1000 kilometres per second, that’s really fast. 
+
+And that density can increase also by a factor of, I don’t know, but by several orders of magnitude. Let’s say five, up to a factor of five, let’s say it’s not uncommon. 
+
+These things hit the magnetosphere, and the magnetosphere is a protective invisible envelope that surrounds the earth and prevents this high speed solar wind coming from the Sun from hitting the atmosphere directly. 
+
+When this happens, the magnetosphere sort of rings okay, you can say it’s like a bell. When you hit a bell with something it abruptly rings and then these adverse things can happen. You can have large induced electric fields, even at the surface of the Earth. You can destroy satellites that are in orbit. 
+
+So yeah, unless they take some measures to protect them, then these satellites can be damaged or completely destroyed. 
+
+Anyway, coming back to the measurement of these basic parameters, you can use these basic parameters to learn a lot about the weather.
+
+You see, the goal of a lot of space physicists is to understand space weather. And space weather is the manifestation of variations, for example the variability of solar activity. Solar wind on our magnetosphere and ionosphere can affect what’s happening on the ground. 
+
+So, one thing that I started with was to look at a very basic instrument called the Langmuir Probe. 
+
+It’s an electric probe that you put in a plasma, you bias to certain voltages, you measure the current as a function of bias voltage. And from this in principle, you can get the density, the temperature, the floating potential, I’m not going to go into the full potential of the satellite, but the satellite has a potential in space, it’s not, it’s not at zero potential with respect to the background plasma. 
+
+So, you can get all these things in principle, but the methods that are used to infer these quantities, these parameters, are always based on theory, relatively simple analytic theory.
+
+It’s simple theories that can be used to derive simple analytic expressions that have to do these inferences. And they make a lot of assumptions which are not satisfied, they’re not well satisfied. 
+
+So what we what you get in the end is an estimate, let’s say of the density, which is frequently three times larger than that it should be. Temperatures are usually reasonably good. Satellite potentials, not too many instruments measure the potential of a satellite accurately. 
+
+This is something that that’s highly uncertain in a lot of space missions. What we did in our group is to develop simulation tools, numerical tools, to simulate the interaction between the space environment, a satellite, and the instruments. From this we can construct synthetic data sets that we can use not to develop theory, because theory is just not capable of the accounting for all the processes that are important and the geometry that is important. 
+
+So we do three dimensional kinetic simulations, we construct synthetic data sets, and we use multivariate regression techniques. 
+
+So you have a data set, you have a lot of densities, temperatures, and all sorts of relevant parameters. You also have currents, it’s possible with the simulations to calculate the currents that you would get given certain plasma conditions. And then the regression techniques allow us to go from the currents back to the density, temperature, etc. So that’s what we have been doing. 
+
+It’s still in progress, you know, I have students working on different designs of probes. This is providing methods for inferring these plasma conditions, much more reliably than what has been possible so far. 
+
+But you know, the challenge is to convince people to adopt these techniques. People have been working with pretty much the same algorithms and techniques for about 100 years. It’s not a new problem, it’s an old problem. Everybody is used to doing things a certain way and they’re happy with it. It’s not going to be easy to convince people to at least look at new and possibly better ways of doing things.
+
+#### Abdul-Samad Olagunju  11:36  
+Yeah, that was what I even wanted to ask you next. How’s it been communicating ideas to your scientific community? In science, it’s always about the community. The community has to adopt the idea.
+
+#### Richard Marchand  11:48  
+Yeah, otherwise, you’re wasting your time. Maybe you’re having a lot of fun. Yeah. But if you’re having a lot of fun doing something, and even if it’s very good, and nobody adopts it, then you you’ve lost. Not completely wasted your time, but it’s not a success.
+
+#### Abdul-Samad Olagunju  12:10  
+So is it just Canadians that you’re working with? Or is this a global thing? 
+
+#### Richard Marchand  12:21  
+We have a collaboration with people in Norway, with people in Europe, and other places in Canada. Also, with University of Calgary. They have a strong group in space physics at the University of Calgary. It’s not just Canada.
+
+#### Abdul-Samad Olagunju  12:40  
+So how is it like to organise things with them? How difficult is that? Because you have your classes with your students, and then you’re also working with your people in your lab? How difficult is it to organise these things with organisations that are global?
+
+#### Richard Marchand  12:54  
+Yeah, it’s very difficult. Let’s say with the Norwegians, we meet once every two weeks. And there’s a student involved in this. It’s good for him because he’s collaborating with actual experimentalists. We’re doing computational work. And he’s doing some simulations. And he benefits a lot from input from these experienced scientists who work with actual satellites, now Norway has launched one. I think they do. They have launched the small satellites, relatively small satellites. And they have a lot of experience in instrumentation, design, and building. And now they’re getting experience with simulations, due in part to our collaboration.
+
+#### Abdul-Samad Olagunju  13:49  
+Okay. You say that Norway is releasing satellites, how do you feel about the state of Canada’s space programme? Like, are we doing a lot in Canada to release satellites?
+
+#### Richard Marchand  14:00  
+Well, there are companies that build components, satellite components, and maybe whole satellites? I’m not sure. I suppose we could launch satellites if we really wanted to. I don’t think it would take very long to develop the launchers for orbital missions, smaller orbital missions, but we don’t as far as I know. We do participate in a lot of international missions. So there are some people working on some instruments with some researchers in NASA and in Europe. 
+
+Additionally, we’re starting to explore collaborations with Spain. There’s a researcher in Spain who was a student also, who is interested in the sort of techniques that we have developed to infer plasma parameters and spacecraft parameters from Langmuir Probe measurements. We also have someone, I wouldn’t call it a formal collaboration, but it’s an informal collaboration with somebody in Sweden. And there’s a swarm project also that we sort of participate in and that’s a European Space Agency project. 
+
+#### Abdul-Samad Olagunju  15:39  
+Fantastic. I want to switch gears a little bit to the computational side. You’re creating simulations to mimic what’s going out going on in space? What do you look at and how are you building these programs? What specifically are you using as a programming language?
+
+#### Richard Marchand  15:59  
+Well, the programs that I am using have been building on something that started many, many years ago, maybe 30 years ago. I was working in the fusion programme, there was a Canadian fusion programme, it was terminated. But this is when I started to look at the modelling of plasma, initially in two dimensions. Now I’ve extended it to three dimensions. So I have written the main components of our simulation tools. I’ve written it myself. 
+
+#### Abdul-Samad Olagunju  16:51  
+I just want to know, because I have been really interested in programming this past summer, how was it like to learn all the different tools and techniques you need to build these simulations? Back then before we had like, huge, available resources on the internet? 
+
+#### Richard Marchand  17:10  
+Well, it’s not done fast. It takes time. Yeah. As I said, this work has been evolving over the last maybe 30 years. And I really started working on satellite plasma interactions when I went for a sabbatical leave. 
+
+I went on sabbatical to a place where there were a lot of experimentalists, and an instrument scientist who knew a lot about satellites and instruments. There’s another fruit fly.
+
+#### Abdul-Samad Olagunju  17:59  
+In Nigeria, where I come from, I go there a couple of summers, every couple of summers now because of COVID. But there’s lots of flies so they have these tennis rackets are electrically charged. And my little cousins, they always run around and they’re like, trying to catch the flies. 
+
+#### Richard Marchand  18:20  
+Maybe I should get one. But for the fruit fly, I would need one with a very fine wire mesh.
+
+#### Abdul-Samad Olagunju  18:25  
+Yeah.
+
+#### Richard Marchand  18:26  
+Anyway. What was I saying? Oh yeah, I was telling you about my stay in France actually for a sabbatical. There they had a software to simulate satellite plasma interaction. I decided to use that initially. The developer was right there. 
+
+I couldn’t talk to the developer, and I got so frustrated. At the time, I already had quite a bit of experience in mesh generation and, and finite elements. I just put everything aside, I took two or three months, and I wrote Miko. It was still a bit buggy, but it was doing a fairly good job. And that was more than 10 years ago. It was 14 years ago. And since then, the code has been debugged and considerably improved. 
+
+So now it’s actually quite good and they’re using it in Norway. I have a former student who uses it in Pakistan. Who else uses it? I do and I have a student working at Los Alamos now. And I think he uses it occasionally; they have their own codes. But it’s nice. He told me once that he would like to make comparisons to just check things. To make sure that what he was doing with the other codes was in agreement with what he gets with our code.
+
+#### Abdul-Samad Olagunju  20:16  
+So you mentioning Los Alamos, it just sparked this question me. You said you work with Fusion? Right? Yeah. And that’s working with nuclear reactors and all that. How far away are we from fusion reactors?
+
+#### Richard Marchand  20:28  
+75 years ago, they said, it will be ready in 50 years. And after that, they said, another 50 years, and I think it will be another 50 years, it may never work. It’s so complicated. And expensive. I mean, it will, it does work because there are some hydrogen bonds. And the sun is working with the fusion, but to confine the plasma and produce all this energy. It’s really, really difficult.
+
+#### Abdul-Samad Olagunju  21:05  
+And when you into nuclear physics from your university or whatever, what was your educational path from high school to university, why did you decide to go into physics?
+
+#### Richard Marchand  21:19  
+Well, I always liked science, and physics in particular. Yeah, I wasn’t very good at other things. But somehow, I was, I was really good at physics. Compared to my peers. Anyway, I was really good in physics and mathematics, and I liked it. And I never questioned that, my choice of going to physics. 
+
+#### Abdul-Samad Olagunju  21:44  
+What was the culture like back then, like, today, everyone’s expected to go to university, get a high school diploma? How was it like back then?
+
+#### Richard Marchand  21:57  
+Well, you see, I tried, certainly, in elementary school. Not everybody was aiming at going to university, they all wanted to go to high school, because it was recognised even then that high school, a high school diploma was necessary to get a job. If you want to get an interesting job, otherwise, you have to go to a professional school and learn a trade. 
+
+So a lot of people did this. And when I studied physics at the University of Montreal, I think we started with 75 students in a class and people sort of scattered after a couple of years. And we finished, I forgot how many we were, maybe, I don’t know, 40, or something. 
+
+It was a really large class. After that, that there were some very small classes with 15 or 20. 
+
+#### Abdul-Samad Olagunju  23:07  
+And how does it narrow down? So in university, you learn about the basics of physics, but how do you narrow down to say, Okay, I want to work in this job or this field?
+
+#### Richard Marchand  23:21  
+I liked physics. And I, when I did my Masters at the University of Toronto, I decided to take a subject that would be as wide as possible. So I did my Master’s in condensed matter, then it was called solid state physics. Now it’s gone. So condensed matter. 
+
+And from there, I went to plasma physics. So it didn’t really matter to me which kind of Physical Physics I was doing. As long as I’m doings a solving problem. What I really like, is to solve problems. What I can tell you about computational physics is that you can do what others cannot do. Because you make your own tool, you create your own tool, you create your own software, if you’re into it, you can write your own software and solve problems that a commercial program cannot solve. 

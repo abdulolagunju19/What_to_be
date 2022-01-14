@@ -83,6 +83,7 @@ const Upcoming = () => {
           >
             Get in touch!
           </Button>
+          <Text>Images from StorySet</Text>
       </Box>
     </>
   )

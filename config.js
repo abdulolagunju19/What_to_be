@@ -9,13 +9,13 @@ export const data = [
   {
     title: "Learn about your Professors.",
     description:
-      "Tired of scraping the University of Alberta faculty pages in order to learn about interesting research going on in campus? We hope to provide you with a wide variety of cool research and the personalities behind them.",
+      "We hope to provide you with a wide variety of information about research and the personalities behind them.",
     image: "/Breast cancer research-bro.png",
   },
   {
     title: "Learn about your clubs on campus.",
     description:
-      "Bearsden gives you a little bit of information about the clubs you want to join. Let's take it up a notch. We give you their purpose, and follow up with them so you can learn more about the interesting things people are trying to put together.",
+      "We give you their purpose, and follow up with them so you can learn more about the interesting things people are trying to put together.",
     image: "/Creative team-cuate.png",
   },
   {

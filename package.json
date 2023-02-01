@@ -42,7 +42,7 @@
     "typewriter-effect": "^2.18.0"
   },
   "devDependencies": {
-    "next-sitemap": "^1.6.168",
+    "next-sitemap": "^3.1.48",
     "prettier": "2.4.0"
   }
 }
